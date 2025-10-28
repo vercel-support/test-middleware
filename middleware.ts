@@ -15,6 +15,6 @@ export const config = {
         * - api/public
         * - api/aws-mktplace
         */
-        '/((?!_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt|api/public|api/aws-mktplace).*)',
+        '/((?!_next/static|_next/image|favicon.ico|sitemap.xml|vercel.svg|robots.txt||api/public|api/aws-mktplace).*)',
     ],
 };
