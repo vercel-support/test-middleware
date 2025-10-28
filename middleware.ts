@@ -2,19 +2,6 @@ import { NextRequest, NextResponse } from 'next/server'
 
 export async function middleware(request: NextRequest) {
 
-    if (request.nextUrl.pathname.startsWith('/auth')) {
-        return NextResponse.next();
-    }
-
-    const { origin } = new URL(request.url);
-    console.log(request.url);
-    
-    const session = request.cookies.get('session');
-
-    if (!session) {
-        return NextResponse.redirect(`${origin}/auth/login`);
-    }
-
     return NextResponse.next();
 }
 
